@@ -1,0 +1,33 @@
+<h1>Listing shields</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shield</th>
+      <th>Origin</th>
+      <th>Description</th>
+      <th>Surname</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shields.each do |shield| %>
+      <tr>
+        <td><%= shield.shield %></td>
+        <td><%= shield.origin %></td>
+        <td><%= shield.description %></td>
+        <td><%= shield.surname_id %></td>
+        <td><%= link_to 'Show', shield %></td>
+        <td><%= link_to 'Edit', edit_shield_path(shield) %></td>
+        <td><%= link_to 'Destroy', shield, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shield', new_shield_path %>

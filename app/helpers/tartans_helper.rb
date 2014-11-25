@@ -1,0 +1,2 @@
+module TartansHelper
+end

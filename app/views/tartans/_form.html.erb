@@ -1,0 +1,29 @@
+<%= form_for(@tartan) do |f| %>
+  <% if @tartan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tartan.errors.count, "error") %> prohibited this tartan from being saved:</h2>
+
+      <ul>
+      <% @tartan.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tartan %><br>
+    <%= f.text_field :tartan %>
+  </div>
+  <div class="field">
+    <%= f.label :tartext %><br>
+    <%= f.text_area :tartext %>
+  </div>
+  <div class="field">
+    <%= f.label :surname_id %><br>
+    <%= f.number_field :surname_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

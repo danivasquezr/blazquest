@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  motto: MyString
+  mean: MyString
+  surname_id: 1
+
+two:
+  motto: MyString
+  mean: MyString
+  surname_id: 1

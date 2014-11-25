@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @surname.surname %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @surname.history %>
+</p>
+
+<p>
+  <strong>Shield:</strong>
+  <%= @surname.shield %>
+</p>
+
+<p>
+  <strong>Origin:</strong>
+  <%= @surname.origin %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @surname.description %>
+</p>
+
+<%= link_to 'Edit', edit_surname_path(@surname) %> |
+<%= link_to 'Back', surnames_path %>

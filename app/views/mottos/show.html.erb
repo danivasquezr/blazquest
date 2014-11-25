@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Motto:</strong>
+  <%= @motto.motto %>
+</p>
+
+<p>
+  <strong>Mean:</strong>
+  <%= @motto.mean %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @motto.surname_id %>
+</p>
+
+<%= link_to 'Edit', edit_motto_path(@motto) %> |
+<%= link_to 'Back', mottos_path %>

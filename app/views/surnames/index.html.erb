@@ -1,0 +1,35 @@
+<h1>Listing surnames</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Surname</th>
+      <th>History</th>
+      <th>Shield</th>
+      <th>Origin</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surnames.each do |surname| %>
+      <tr>
+        <td><%= surname.surname %></td>
+        <td><%= surname.history %></td>
+        <td><%= surname.shield %></td>
+        <td><%= surname.origin %></td>
+        <td><%= surname.description %></td>
+        <td><%= link_to 'Show', surname %></td>
+        <td><%= link_to 'Edit', edit_surname_path(surname) %></td>
+        <td><%= link_to 'Destroy', surname, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surname', new_surname_path %>

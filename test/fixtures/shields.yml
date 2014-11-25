@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shield: MyString
+  origin: MyString
+  description: MyText
+  surname_id: 1
+
+two:
+  shield: MyString
+  origin: MyString
+  description: MyText
+  surname_id: 1

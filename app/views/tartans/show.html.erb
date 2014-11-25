@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tartan:</strong>
+  <%= @tartan.tartan %>
+</p>
+
+<p>
+  <strong>Tartext:</strong>
+  <%= @tartan.tartext %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @tartan.surname_id %>
+</p>
+
+<%= link_to 'Edit', edit_tartan_path(@tartan) %> |
+<%= link_to 'Back', tartans_path %>

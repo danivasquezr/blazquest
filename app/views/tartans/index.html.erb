@@ -1,0 +1,31 @@
+<h1>Listing tartans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tartan</th>
+      <th>Tartext</th>
+      <th>Surname</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tartans.each do |tartan| %>
+      <tr>
+        <td><%= tartan.tartan %></td>
+        <td><%= tartan.tartext %></td>
+        <td><%= tartan.surname_id %></td>
+        <td><%= link_to 'Show', tartan %></td>
+        <td><%= link_to 'Edit', edit_tartan_path(tartan) %></td>
+        <td><%= link_to 'Destroy', tartan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tartan', new_tartan_path %>

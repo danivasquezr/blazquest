@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tartan: MyString
+  tartext: MyText
+  surname_id: 1
+
+two:
+  tartan: MyString
+  tartext: MyText
+  surname_id: 1
